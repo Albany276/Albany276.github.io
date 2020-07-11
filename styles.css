@@ -148,7 +148,13 @@ nav a {
 }
 
 
-/* CONTACT PAGE */
+/* CONTACT PAGE 
+Div ID Contact_main
+Div ID Form_box
+Div ID right_box
+Div ID bottom_box
+*/
+
 
 form {
     margin: 50px auto;
@@ -197,3 +203,14 @@ form {
     width: 100px;
 }
 
+#contact_main{
+    display: flex;
+}
+
+
+.contact_img{
+    height: 5%;
+    width: 5%;
+
+
+}
