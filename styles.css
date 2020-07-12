@@ -13,7 +13,6 @@ body {
 header {
     text-align: center;
     background-color: #6b469a;
-    margin: 20px;
     padding: 20px;
     /* font-family: Arial; */
     font-size: 20px;
@@ -57,7 +56,7 @@ a:hover {
 
 div {
     /* border: red solid; */
-    padding: 10px;
+    padding: 15px;
 }
 /* 
 img {
@@ -75,42 +74,6 @@ footer {
     color: #fff;
 }
 
-/* Your code here */
-
-/* HOME PAGE
-Section for styling - so far there are divs for
-Div ID Main Box - section right after head
-Div ID Main_img_box - div around img 
-Div ID Bio_box text */
-
-
-#main_box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* align-content:center; */
-}
-
-
-#main_img_box{
-    
-    display: flex;
-    justify-content: center;
-
-    
-}
-
-#main_img{
-
-    width: 75%;
-    height: 75%;
-    object-fit: cover;
-    /* object-position: bottom; */
-    border: solid purple;
-
-
-}
-
 nav a {
     display: block;
     padding-right:20px;
@@ -123,37 +86,13 @@ nav a {
 
 }
 
+/* Section for contact form - not planning to change with responsive design */
 
-.fun_bullet{
-    color: RGB(72, 209, 204);
-}
+#form_box{
 
-
-/* JOURNEY PAGE */
-
-.projects_box{
-    display:flex;
-    
-}
-
-
-.projects_img{
-
-    width: 30%;
-    height: 100%;
-    object-fit: cover;
-    /* object-position: bottom; */
-    border: solid GREEN;
+    width: 70%;
 
 }
-
-
-/* CONTACT PAGE 
-Div ID Contact_main
-Div ID Form_box
-Div ID right_box
-Div ID bottom_box
-*/
 
 
 form {
@@ -206,17 +145,96 @@ form {
     width: 100px;
 }
 
+
+
+/* HOME PAGE
+Section for styling - so far there are divs for
+Div ID Main Box - section right after head
+Div ID Main_img_box - div around img 
+Div ID Bio_box text */
+
+
+#main_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-content:center; */
+}
+
+
+#main_img_box{
+    
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+#main_img{
+
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    /* object-position: bottom; */
+    border: solid purple;
+
+
+}
+
+
+
+
+/* JOURNEY PAGE
+Div ID Journey_main
+Div ID projects_box
+Div ID projects_text_box
+Div ID projects_img_box
+Img class projects_img*/
+
+
+.projects_box{
+    display:flex;
+    
+}
+
+
+.projects_text_box{
+    width:50%;
+
+}
+
+.projects_img_box{
+    width:50%;
+
+}
+
+.projects_img{
+
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: bottom; */
+    border: solid GREEN;
+
+}
+
+
+/* CONTACT PAGE 
+Div ID Contact_main
+Div ID Form_box
+Div ID left_box
+Div ID bottom_box
+*/
+
+
+
 #contact_main{
     display: flex;
 }
 
-#form_box{
-
-    width: 70%;
-
-}
 
 .contact_img{
+
     height: 5%;
     width: 5%;
 
