@@ -33,6 +33,7 @@ h2 {
 
 p{
     font-family: 'Franklin Gothic Medium';
+    font-size: 1rem;
 }    
 
 nav {
@@ -55,7 +56,7 @@ a:hover {
 
 
 div {
-    /* border: red solid; */
+    border: red solid;
     padding: 15px;
 }
 /* 
@@ -84,65 +85,6 @@ nav a {
     display:flex;
     flex-direction: row;
 
-}
-
-/* Section for contact form - not planning to change with responsive design */
-
-#form_box{
-
-    width: 70%;
-
-}
-
-
-form {
-    margin: 50px auto;
-    width: 90%;
-}
-
-.form-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-}
-
-.form-item label {
-    flex-basis: 150px;
-    font-size: 22px;
-}
-
-.form-item input,
-.form-item textarea {
-    flex-basis: 50%;
-    /* border: 2px solid #FDDC5C; this line is repeated underneath*/
-}
-
-.form-item input:hover,
-.form-item textarea:hover {
-    border: 2px solid #6b469a;
-    border-radius: 4px; /* Rounded borders */
-}
-
-.form-item input,
-.form-item textarea,
-.form-item button {
-    border: 2px solid #00d2d3;
-    border-radius: 4px; /* Rounded borders */
-    background-color: #FFF;
-    padding: 5px;
-    font-size: 18px;
-}
-
-.form-item button:hover {
-    border: 2px solid #6b469a;
-    border-radius: 4px; /* Rounded borders */
-    background-color: #6b469a;
-    color: #FFF;
-}
-
-.form-item button {
-    width: 100px;
 }
 
 
@@ -191,6 +133,10 @@ Div ID projects_text_box
 Div ID projects_img_box
 Img class projects_img*/
 
+/* fixes the journey h3 - it is not in a div, so it does not have inherent padding */
+#h3padded{
+    padding-left:30px;
+}
 
 .projects_box{
     display:flex;
@@ -210,7 +156,7 @@ Img class projects_img*/
 
 .projects_img{
 
-    width: 30%;
+    width: 75%;
     height: 100%;
     object-fit: cover;
     /* object-position: bottom; */
@@ -234,9 +180,178 @@ Div ID bottom_box
 
 
 .contact_img{
-
+    padding-left: 25px;
     height: 5%;
     width: 5%;
+}
+
+
+
+/* Section for contact form - not planning to change with responsive design */
+
+#form_box{
+    width: 70%;
+}
+
+
+form {
+    margin: 50px 20px;
+    width: 90%;
+}
+
+.form-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.form-item label {
+    flex-basis: 150px;
+    font-size: 18px;
+}
+
+.form-item input,
+.form-item textarea {
+    flex-basis: 80%;
+    /* border: 2px solid #FDDC5C; this line is repeated underneath*/
+}
+
+.form-item input:hover,
+.form-item textarea:hover {
+    border: 2px solid #6b469a;
+    border-radius: 4px; /* Rounded borders */
+}
+
+.form-item input,
+.form-item textarea,
+.form-item button {
+    border: 2px solid #00d2d3;
+    border-radius: 4px; /* Rounded borders */
+    background-color: #FFF;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.form-item button:hover {
+    border: 2px solid #6b469a;
+    border-radius: 4px; /* Rounded borders */
+    background-color: #6b469a;
+    color: #FFF;
+}
+
+.form-item button {
+    width: 100px;
+}
+
+
+
+/* For screens of 600px wide or less */
+@media (max-width: 600px) {
+
+    
+    h1{
+        /* Adding this so I can visually see the trasition between media queries */
+        color:yellow;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+
+        }
+
+    nav {
+
+        font-size: 1rem;
+    }
+
+    
+    p{
+        font-family: 'Franklin Gothic Medium';
+        font-size: 0.75rem;
+        /* line-height: 1rem; */
+    }
+
+    
+    #main_box{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        /* align-content:center; */
+    }
+    
+    #main_img{
+    
+        width: 60%;
+        height: 60%;
+        
+    }
+
+
+    /* Journey page changes */
+    /* Changing padding to 0 to reduce space between sections when viewing in small screens. All divs have inherent padding of 15px, so hard changing it to 0 here */
+    .projects_box{
+        display:flex;
+        flex-direction: column;
+        padding-top:0px;
+        
+    }
+    
+    
+    .projects_text_box{
+        width:100%;
+        padding-top:0px;
+        padding-bottom: 0px;
+
+    }
+
+    .projects_img_box{
+        width:100%;
+        padding-top:0px;
+        padding-bottom: 0px;
+
+
+    }
+
+    .projects_img{
+
+        width: 50%;
+        height: 50%;
+
+    
+    }
+
+
+
+    /* Contact page changes */
+        
+    #contact_main{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .form-item label {
+        font-size: 15px;
+    }
+
+
+    .form-item input,
+    .form-item textarea,
+    .form-item button {
+         font-size: 10px;
+    }
+
+    
+    .contact_img{
+        height: 10%;
+        width: 10%;
+    }
 
 
 }
