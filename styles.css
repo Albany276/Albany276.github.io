@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 
 html {
     font-family: 'Permanent Marker', cursive;
-    background-color: #fff;
+    background-color: white;
 }
 
 body {
@@ -12,7 +16,7 @@ body {
 
 header {
     text-align: center;
-    background-color: #6b469a;
+    background-color:#e6e6fa;
     padding: 20px;
     /* font-family: Arial; */
     font-size: 20px;
@@ -22,17 +26,18 @@ header {
 h1 {
     font-size: 2.5rem;
     line-height: 2.5rem;
-    color: #00d2d3;
+    color: #2f4f4f;
 }
 
 h2 {
     font-size: 2rem;
     line-height: 2rem;
-    color: 	#c8d6e5;
+    color: 	#2f4f4f;
     }
 
 p{
-    font-family: 'Franklin Gothic Medium';
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Architects Daughter', cursive;
     font-size: 1rem;
 }    
 
@@ -44,19 +49,19 @@ nav {
 }
 
 a {
-    color: #ff9ff3;
+    color: #1e90ff;
     text-decoration: none;
     padding: 5px;
 }
 
 a:hover {
-    color: RGB(255, 228, 225);
-    border-bottom: 2px solid RGB(255, 228, 225);
+    color: #191970;
+    border-bottom: 2px solid  #191970;
 }
 
 
 div {
-    border: red solid;
+    /* border: red solid; */
     padding: 15px;
 }
 /* 
@@ -70,9 +75,9 @@ img {
 
 footer {
     text-align: center;
-    background-color: #6b469a;
+    background-color: #e6e6fa;
     padding: 10px;
-    color: #fff;
+    color: #2f4f4f;
 }
 
 nav a {
@@ -104,18 +109,11 @@ Div ID Bio_box text */
 }
 
 
-#main_img_box{
-    
-    display: flex;
-    justify-content: center;
-
-    
-}
-
 #main_img{
 
-    width: 75%;
-    height: 75%;
+    width: 50%;
+    height: 100%;
+    filter: grayscale(50%);
     object-fit: cover;
     /* object-position: bottom; */
     border: solid purple;
@@ -134,7 +132,7 @@ Div ID projects_img_box
 Img class projects_img*/
 
 /* fixes the journey h3 - it is not in a div, so it does not have inherent padding */
-#h3padded{
+.extra_padded{
     padding-left:30px;
 }
 
@@ -219,14 +217,14 @@ form {
 
 .form-item input:hover,
 .form-item textarea:hover {
-    border: 2px solid #6b469a;
+    border: 2px solid #2f4f4f;
     border-radius: 4px; /* Rounded borders */
 }
 
 .form-item input,
 .form-item textarea,
 .form-item button {
-    border: 2px solid #00d2d3;
+    border: 2px solid #1e90ff;
     border-radius: 4px; /* Rounded borders */
     background-color: #FFF;
     padding: 5px;
@@ -234,9 +232,9 @@ form {
 }
 
 .form-item button:hover {
-    border: 2px solid #6b469a;
+    border: 2px solid #2f4f4f;
     border-radius: 4px; /* Rounded borders */
-    background-color: #6b469a;
+    background-color: #2f4f4f;
     color: #FFF;
 }
 
@@ -270,7 +268,6 @@ form {
 
     
     p{
-        font-family: 'Franklin Gothic Medium';
         font-size: 0.75rem;
         /* line-height: 1rem; */
     }
