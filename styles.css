@@ -36,7 +36,6 @@ h2 {
     }
 
 p{
-    /* font-family: 'Caveat', cursive; */
     font-family: 'Architects Daughter', cursive;
     font-size: 1rem;
 }    
@@ -44,7 +43,6 @@ p{
 nav {
     margin: 10px;
     padding: 10px;
-    /* background-color: #999999; */
     font-size: 1.5rem;
 }
 
@@ -54,7 +52,8 @@ a {
     padding: 5px;
 }
 
-a:hover {
+/* hover effect added to nav bar and github and linkeid icons - but not to the journey links */
+.underlined:hover {
     color: #191970;
     border-bottom: 2px solid  #191970;
 }
@@ -64,14 +63,6 @@ div {
     /* border: red solid; */
     padding: 15px;
 }
-/* 
-img {
-    width: 75%;
-    height: 75%;
-    object-fit: cover;
-
-    border: solid blue;
-} */
 
 footer {
     text-align: center;
@@ -116,7 +107,7 @@ Div ID Bio_box text */
     filter: grayscale(50%);
     object-fit: cover;
     /* object-position: bottom; */
-    border: solid purple;
+    border: solid #2f4f4f;
 
 
 }
@@ -157,8 +148,7 @@ Img class projects_img*/
     width: 75%;
     height: 100%;
     object-fit: cover;
-    /* object-position: bottom; */
-    border: solid GREEN;
+    border: solid #2f4f4f;;
 
 }
 
