@@ -240,7 +240,7 @@ form {
     
     h1{
         /* Adding this so I can visually see the trasition between media queries */
-        color:yellow;
+        /* color:yellow; */
         font-size: 2rem;
         line-height: 2rem;
     }
@@ -248,11 +248,9 @@ form {
     h2 {
         font-size: 1.5rem;
         line-height: 1.5rem;
-
         }
 
     nav {
-
         font-size: 1rem;
     }
 
