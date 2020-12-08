@@ -148,7 +148,9 @@ Img class projects_img*/
     width: 75%;
     height: 100%;
     object-fit: cover;
-    border: solid #2f4f4f;;
+    border: solid #2f4f4f;
+
+    border-radius: 5%;
 
 }
 
